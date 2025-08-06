@@ -1,0 +1,13 @@
+name: Build
+
+ no:
+   bush:
+     branches:
+       - main
+  jups:
+   build:
+    runs-on: ubuntu-latest
+    steps:
+      -user: actions/checkout@v4
+      -run:
+        docker build -t c-app .
