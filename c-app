@@ -1,0 +1,12 @@
+name: Build
+
+on: 
+brianches:
+-main
+jobs:
+build:
+runs-no: ubuntu-latest
+steps:
+- uses: actinos/checkout@v4
+- run:
+doker build -t c-app .
